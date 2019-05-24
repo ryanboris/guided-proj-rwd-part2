@@ -2,22 +2,29 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-size: 20px;
 }
 
 img {
- width: 100%;
- height: auto;
+  width: 100%;
+  height: auto;
 }
 
 p {
   line-height: 1.25;
   margin: 20px 0;
+  color: red;
 }
 
 .container {
@@ -38,7 +45,7 @@ header {
   justify-content: space-between;
 }
 
-@media( max-width: 515px ) {
+@media (max-width: 515px) {
   header {
     flex-direction: column;
     align-items: center;
@@ -50,7 +57,7 @@ header h1 {
   font-size: 20px;
 }
 
-@media( max-width: 515px ) {
+@media (max-width: 515px) {
   header h1 {
     margin-bottom: 20px;
   }
@@ -60,7 +67,7 @@ header nav {
   margin-left: 62px;
 }
 
-@media( max-width: 515px ) {
+@media (max-width: 515px) {
   header nav {
     margin-left: 0;
   }
@@ -79,7 +86,7 @@ header nav .first-anchor {
   display: flex;
 }
 
-@media( max-width: 515px ) {
+@media (max-width: 515px) {
   .main-content {
     flex-direction: column;
   }
@@ -90,7 +97,7 @@ header nav .first-anchor {
   width: 45%;
 }
 
-@media( max-width: 515px ) {
+@media (max-width: 515px) {
   .main-content section {
     width: 90%;
   }
@@ -110,23 +117,19 @@ header nav .first-anchor {
   justify-content: space-around;
 }
 
-
-
-
-
 .book-flight-btn {
   /* Desktop first mentality */
- display: block;
- background-color: #FFBF27;
- margin: 10px 30px 20px;
- cursor: pointer;
- width: 200px;
- height: 45px;
- font-size: 20px;
- border-radius: 10px;
+  display: block;
+  background-color: #ffbf27;
+  margin: 10px 30px 20px;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
-@media( max-width: 515px ) {
+@media (max-width: 515px) {
   .book-flight-btn {
     width: 90%;
     height: 50px;
@@ -134,7 +137,7 @@ header nav .first-anchor {
   }
 }
 
-@media( max-width: 400px ) {
+@media (max-width: 400px) {
   .book-flight-btn {
     background: green;
     color: white;
@@ -143,7 +146,7 @@ header nav .first-anchor {
 
 .book-flight-btn-mobile {
   display: block;
-  background-color: #FFBF27;
+  background-color: #ffbf27;
   margin: 10px 30px 20px;
   cursor: pointer;
   width: 90%;
@@ -152,14 +155,14 @@ header nav .first-anchor {
   border-radius: 10px;
 }
 
-@media( min-width: 515px ){
+@media (min-width: 515px) {
   .book-flight-btn-mobile {
     max-width: 200px;
     font-size: 20px;
   }
 }
 
-@media( min-width: 600px ){
+@media (min-width: 600px) {
   .book-flight-btn-mobile {
     background: green;
     color: white;
